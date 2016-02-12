@@ -346,6 +346,9 @@ header {
 }
 .section-title span {
 }
+#instafeed {
+	padding-bottom: 45px;
+}
 /*- Footer -*/
 footer {
 	padding: 0;
