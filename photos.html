@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="images/favicon.ico">
+		<title>The Brocean</title>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Custom styles for this template -->
+		<link href="css/jquery.bxslider.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<script type="text/javascript" src="js/instafeed.min.js"></script>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li class="active"><a href="photos.html">Photos</a></li>
+						<li><a href="#contact">Equipment</a></li>
+						<li><a href="about.html">About Me</a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="http://www.instagram.com/thebrocean/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+
+		<div class="container">
+		<header>
+			<a href="index.html"><img src="images/logo.png"></a>
+		</header>
+		<section>
+			<div class="row">
+				<div class="col-md-12">
+					<article class="blog-post">
+						<div class="blog-post-body">
+							<h2><a href="post.html">Image Gallery</a></h2>
+							<div class="blog-post-text">
+
+								<p>Photos will start on <a href="http://www.instagram.com/thebrocean/" id="insta-link">Instagram</a> but as I take more, I will post the higher resolution ones here!</p>
+							</div>
+						</div>
+					</article>
+					<h2><a href="post.html">Instagram Gallery</a></h2>
+					<div id="instafeed"></div>
+					<script type="text/javascript">
+					    var feed = new Instafeed({
+					    	clientId: '55c23989495a4183bd761235ff14950f',
+					    	accessToken: '2930980869.55c2398.b98ad5dc87d64470a481b67ec14603df',
+					        get: 'user',
+					        sortBy: 'most-recent',
+					        userId: '2930980869'
+					    });
+					    feed.run();
+					</script>
+				</div>
+			</div>
+		</section>
+		</div><!-- /.container -->
+
+		<footer class="footer">
+
+			<div class="footer-socials">
+				<a href="http://www.instagram.com/thebrocean/"><i class="fa fa-instagram"></i></a>
+			</div>
+
+			<div class="footer-bottom">
+				<i class="fa fa-copyright"></i> Copyright 2015. All rights reserved.<br>
+				Theme made by <a href="http://www.moozthemes.com">MOOZ Themes</a>
+			</div>
+		</footer>
+
+		<!-- Bootstrap core JavaScript
+			================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.bxslider.js"></script>
+		<script src="js/mooz.scripts.min.js"></script>
+	</body>
+</html>
